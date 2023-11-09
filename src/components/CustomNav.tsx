@@ -1,0 +1,20 @@
+import { Navbar, Container, Nav } from "react-bootstrap";
+import { Link } from "react-router-dom";
+
+const CustomNav = () => {
+  return (
+    <>
+      <Navbar bg="dark" data-bs-theme="dark">
+        <Container fluid>
+          <Navbar.Brand href="#home">Space News</Navbar.Brand>
+          <Nav className="me-auto">
+            <Link to="/">Home</Link>
+            <Link to="#">Features</Link>
+            <Link to="#">About</Link>
+          </Nav>
+        </Container>
+      </Navbar>
+    </>
+  );
+};
+export default CustomNav;
